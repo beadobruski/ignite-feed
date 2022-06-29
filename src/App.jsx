@@ -15,7 +15,7 @@ const posts = [
     author: {
       avatarUrl: 'http://github.com/beadobruski.png',
       name: 'Bea Dobruski',
-      role: 'Student @ Rocketseat',
+      role: 'Student @Rocketseat',
     },
     content: [
       { type: 'paragraph', content: 'Fala galeraa 👋 ' },
@@ -35,7 +35,7 @@ const posts = [
     author: {
       avatarUrl: 'http://github.com/diego3g.png',
       name: 'Diego Fernandes',
-      role: 'CTO @ Rocketseat',
+      role: 'CTO @Rocketseat',
     },
     content: [
       { type: 'paragraph', content: 'Fala galeraa 👋 ' },
@@ -53,6 +53,7 @@ const posts = [
 
 // iteração
 // repetição... react;
+// sempre usar o map
 
 export function App() {
   return (
@@ -62,10 +63,17 @@ export function App() {
         <Sidebar />
         <main>
           {/* percorrer os posts =>  */}
-          {/* o metódo forEach não tem nenhum retorno,
+          {/* o metódo forEach não tem nenhum retorno (nada exibido em tela),
           então nesse caso, não FUNCIONARIA usar o forEach. */}
-          {posts.forEach((post) => {
-            <Post />;
+          {posts.map((post) => {
+            return (
+              <Post
+                key={post.id}
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
           })}
         </main>
       </div>
