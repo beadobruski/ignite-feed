@@ -116,8 +116,14 @@ todo o post que contenha um outro post abaixo dele :)
   transition: background-color 0.1s;
 }
 
-.commentForm button[type='submit']:hover {
+/* só funcione caso o botão NÃO ESTIVER disabled */
+.commentForm button[type='submit']:not(:disabled):hover {
   background: var(--green-300);
+}
+
+.commentForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .commentList {
