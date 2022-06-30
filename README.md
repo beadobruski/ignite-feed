@@ -10,7 +10,7 @@ O Ignite Feed é um feed de post's, no qual há como adicionar comentários e de
 
 **Front-end:** React, CSS Modules.
 
-**Libs**: Date-Fns
+**Libs**: Date-Fns, Phosphor-React
 
 
 ## Autor
