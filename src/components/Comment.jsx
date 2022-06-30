@@ -5,7 +5,7 @@ import { Avatar } from './Avatar';
 import styles from './Comment.module.css';
 
 export function Comment({ content, onDeleteComment }) {
-  const [likeCount, setLikeCount] = useStatete(0);
+  const [likeCount, setLikeCount] = useState(0);
 
   function handleDeleteComment() {
     onDeleteComment(content);
