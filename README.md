@@ -6,6 +6,10 @@ O Ignite Feed é um feed de post's, no qual há como adicionar comentários e de
 ![App Screenshot](https://i.imgur.com/xDdUFrA.png)
 
 
+## Ignite Feed em TS
+Em outro repositório, criei o projeto novamente, mas dessa vez utilizando Typescript:
+https://github.com/beadobruski/ignite-feed-ts
+
 ## Stack utilizada
 
 **Front-end:** React, CSS Modules.
